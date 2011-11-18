@@ -16,7 +16,7 @@
 
 <% if @user.user_authentications %>
   <% unless @user.user_authentications.empty? %>
-    <p><strong>You have signed in with these services:</strong></p>
+    <p><strong>U heeft ingelogd met de onderstaande dienst(en):</strong></p>
     <div class="authentications">
       <% for user_authentication in @user.user_authentications %>
         <div class="authentication">
@@ -30,7 +30,7 @@
     </div>
   <% end %>
 </div>
-  <p><strong>Add another service to sign in with:</strong></p>
+  <p><strong>Voeg een ander account toe om u aan te melden:</strong></p>
 <% end %>
 
 <%= hook :login_extras %>

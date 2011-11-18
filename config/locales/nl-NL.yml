@@ -11,11 +11,11 @@ nl-NL:
   social_enable_provider: Enable Authentication Source
   social_api_key: Authentication API Key
   social_api_secret: Authentication Secret
-  social_link: Please provide your email address to continue
-  attach_error: 'That %{kind} account is attached to a another user.'
-  one_more_step: 'One more step to complete your registration from %{kind}'
+  social_link: Geef uw emailadres op om verder te gaan
+  attach_error: 'Dit %{kind} account is al gekoppeld aan een andere emailadres.'
+  one_more_step: 'Nog een stap om de registratie met %{kind} af te ronden'
   devise:
     omniauth_callbacks:
-      success: 'Successfully authorized from %{kind} account.'
-      failure: 'Could not authorize you from %{kind} because "%{reason}".'
+      success: 'Succesvol ingelogd met uw %{kind} account.'
+      failure: 'Inloggen met %{kind} is mislukt om de volgende reden "%{reason}".'
       
