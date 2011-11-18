@@ -1,5 +1,5 @@
 <% if !current_user || !current_user.user_authentications %>
-  <h2>Sign in through one of these services:</h2>
+  <h2>Login met Facebook, Twitter of LinkedIn</h2>
 <% end %>
 <% AuthenticationMethod.where(:environment => ::Rails.env).each do |user| %>
   <%- img = File.exist?(::Rails.root+"public/images/social/#{user.preferred_provider}_32.png") ? "social/#{user.preferred_provider}_32.png" : "social/spree_32.png" -%>
