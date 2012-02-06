@@ -12,10 +12,10 @@ nl-NL:
   social_api_key: Authentication API Key
   social_api_secret: Authentication Secret
   social_link: Geef uw emailadres op om verder te gaan
-  attach_error: 'Dit %{kind} account is al gekoppeld aan een andere emailadres.'
-  one_more_step: 'Nog een stap om de registratie met %{kind} af te ronden'
+  attach_error: Dit %{kind} account is al gekoppeld aan een andere emailadres.
+  one_more_step: Nog een stap om de registratie met %{kind} af te ronden
   devise:
     omniauth_callbacks:
-      success: 'Succesvol ingelogd met uw %{kind} account.'
-      failure: 'Inloggen met %{kind} is mislukt om de volgende reden "%{reason}".'
+      success: Succesvol ingelogd met uw %{kind} account.
+      failure: Inloggen met %{kind} is mislukt om de volgende reden "%{reason}".
       
