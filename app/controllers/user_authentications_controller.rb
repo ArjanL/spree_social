@@ -12,7 +12,7 @@ class UserAuthenticationsController < Spree::BaseController
       sign_in(@user, :event => :authentication) unless current_user
       redirect_back_or_default(products_path)
     else
-      flash.now[:error] = "There is already an account with that email. Please sign in to associate these accounts."
+      flash.now[:error] = "Er is al een account met dit emailadres. Login met dit adres om het account te koppelen."
       render(:template => 'users/merge')
     end
   end
@@ -23,7 +23,7 @@ class UserAuthenticationsController < Spree::BaseController
     authorize! :destroy, @auth
 
     @auth.destroy
-    flash[:notice] = "Successfully deleted authentication source."
+    flash[:notice] = "Verwijderen gelukt."
     redirect_to account_path
   end
 end
